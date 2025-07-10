@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'ELH_VERSION', '1.0.0' );
+define( 'ELH_VERSION', '1.0.1' );
 define( 'ELH__FILE__', __FILE__ );
 define( 'ELH_DIR_PATH', plugin_dir_path( ELH__FILE__ ) );
 define( 'ELH_DIR_URL', plugin_dir_url( ELH__FILE__ ) );
@@ -38,7 +38,7 @@ final class ElementHelper {
 	 *
 	 * @var string The plugin version.
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * Minimum Elementor Version

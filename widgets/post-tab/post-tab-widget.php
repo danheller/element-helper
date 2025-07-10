@@ -6,7 +6,8 @@ use \Elementor\Group_Control_Border;
 use \Elementor\Group_Control_Box_Shadow;
 use \Elementor\Group_Control_Text_Shadow;
 use \Elementor\Group_Control_Typography;
-use \Elementor\Core\Schemes\Typography;
+//use \Elementor\Core\Schemes\Typography;
+use \Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use \Elementor\Group_Control_Background;
 use ElementHelperor\Controls\Select2;
 
@@ -265,7 +266,7 @@ class Post_Tab extends Element_El_Widget {
             [
                 'name' => 'title',
                 'selector' => '{{WRAPPER}} .section-title',
-                'scheme' => Typography::TYPOGRAPHY_1,
+//                'scheme' => Typography::TYPOGRAPHY_1,
             ]
         );
 
@@ -368,7 +369,7 @@ class Post_Tab extends Element_El_Widget {
             [
                 'name' => 'subtitle',
                 'selector' => '{{WRAPPER}} .sub-title',
-                'scheme' => Typography::TYPOGRAPHY_2,
+//                'scheme' => Typography::TYPOGRAPHY_2,
             ]
         );
 
@@ -433,7 +434,7 @@ class Post_Tab extends Element_El_Widget {
             [
                 'name' => 'desccription',
                 'selector' => '{{WRAPPER}} .section-heading p',
-                'scheme' => Typography::TYPOGRAPHY_3,
+//                'scheme' => Typography::TYPOGRAPHY_3,
             ]
         );
 
@@ -639,7 +640,7 @@ class Post_Tab extends Element_El_Widget {
 			[
 				'name' => 'tab_item_typography',
 				'label' => __( 'Typography', 'elementhelper' ),
-				'scheme' => Typography::TYPOGRAPHY_2,
+//				'scheme' => Typography::TYPOGRAPHY_2,
 				'selector' => '{{WRAPPER}} .project-filter-box button',
 			]
 		);
@@ -840,7 +841,7 @@ class Post_Tab extends Element_El_Widget {
 			[
 				'name' => 'title_typography',
 				'label' => __( 'Typography', 'elementhelper' ),
-				'scheme' => Typography::TYPOGRAPHY_2,
+//				'scheme' => Typography::TYPOGRAPHY_2,
 				'selector' => '{{WRAPPER}} .elementhelper-post-tab .elementhelper-post-tab-item-inner .elementhelper-post-tab-title',
 			]
 		);
@@ -899,7 +900,7 @@ class Post_Tab extends Element_El_Widget {
 			[
 				'name' => 'meta_typography',
 				'label' => __( 'Typography', 'elementhelper' ),
-				'scheme' => Typography::TYPOGRAPHY_3,
+//				'scheme' => Typography::TYPOGRAPHY_3,
 				'selector' => '{{WRAPPER}} .elementhelper-post-tab .elementhelper-post-tab-meta span',
 			]
 		);
@@ -975,7 +976,7 @@ class Post_Tab extends Element_El_Widget {
 			[
 				'name' => 'excerpt_typography',
 				'label' => __( 'Typography', 'elementhelper' ),
-				'scheme' => Typography::TYPOGRAPHY_3,
+//				'scheme' => Typography::TYPOGRAPHY_3,
 				'selector' => '{{WRAPPER}} .elementhelper-post-tab .elementhelper-post-tab-excerpt p',
 				'condition' => [
 					'excerpt' => 'yes',

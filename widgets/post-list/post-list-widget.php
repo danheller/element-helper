@@ -827,7 +827,7 @@ class Post_List extends Element_El_Widget {
 													$categories = get_the_category();
 													foreach ( $categories as $category ) {
 														//var_dump($category); echo '<br />';
-														if( ($customize_cat_id [ get_the_ID() ] === NULL && in_array($category->parent, ALLOWED_PARENT_CATEGORYIDS)) || ($customize_cat_id [ get_the_ID() ] !== NULL && in_array($category->term_id, $customize_cat_id [ get_the_ID() ]))) {
+														if( isset( $customize_cat_id ) && ( ($customize_cat_id [ get_the_ID() ] === NULL && in_array($category->parent, ALLOWED_PARENT_CATEGORYIDS)) || ($customize_cat_id [ get_the_ID() ] !== NULL && in_array($category->term_id, $customize_cat_id [ get_the_ID() ])))) {
 													?>
 													<a href="<?php echo get_category_link( $category->term_id ) ?>">
 														<?php echo $category->cat_name; ?>

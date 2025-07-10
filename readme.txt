@@ -35,3 +35,9 @@ You'll find answers to many of your questions on (http://sabberhossain.com/plugi
 
 = 1.0.0 =
 * First release.
+
+= 1.0.1 =
+* Fork to fix bugs affecting the Elementor editing screen
+* Swap out the deprecated typography module for the newer typography module (post-tab-widget.php)
+* Correct javascript error caused by editor.min.js referencing an uninitialized "elementor" object. (editor.min.js)
+* Check whether "$customize_cat_id" variable is set before referencing it (post-list-widget.php

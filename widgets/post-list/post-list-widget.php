@@ -796,7 +796,7 @@ class Post_List extends Element_El_Widget {
 										<a href="<?php echo get_permalink(get_the_ID()); ?>" class="full-size-link" aria-label="Click to read more about <?php echo $title; ?>"><span class="hide"><?php echo $title; ?></span></a>
 										<div class="vision-card-inner">
 											<div class="vision-c-thumb">
-												<img src="<?php echo $featuredImage; ?>" class="<?php echo $customize_post_image_class [ get_the_ID() ]; ?>" alt="<?php echo $featuredAltText; ?>" />
+												<img src="<?php echo $featuredImage; ?>" class="<?php if( isset( $customize_post_image_class [ get_the_ID() ] ) ) { echo $customize_post_image_class [ get_the_ID() ]; } ?>" alt="<?php echo $featuredAltText; ?>" />
 											</div>
 											<div class="card-content">
 												<div class="card-title-content">
@@ -827,7 +827,7 @@ class Post_List extends Element_El_Widget {
 													$categories = get_the_category();
 													foreach ( $categories as $category ) {
 														//var_dump($category); echo '<br />';
-														if( isset( $customize_cat_id ) && ( ($customize_cat_id [ get_the_ID() ] === NULL && in_array($category->parent, ALLOWED_PARENT_CATEGORYIDS)) || ($customize_cat_id [ get_the_ID() ] !== NULL && in_array($category->term_id, $customize_cat_id [ get_the_ID() ])))) {
+														if( isset( $customize_cat_id [ get_the_ID() ] ) && ( ($customize_cat_id [ get_the_ID() ] === NULL && in_array($category->parent, ALLOWED_PARENT_CATEGORYIDS)) || ($customize_cat_id [ get_the_ID() ] !== NULL && in_array($category->term_id, $customize_cat_id [ get_the_ID() ])))) {
 													?>
 													<a href="<?php echo get_category_link( $category->term_id ) ?>">
 														<?php echo $category->cat_name; ?>
